@@ -45,7 +45,7 @@ document.querySelectorAll('[data-academy]').forEach(b => b.addEventListener('cli
   if (need) need.value = 'EdTech Ecosystems (AI-first campus)';
 }));
 
-// Lead form — opens mailto + success state (swap with API/Vercel function later)
+// Lead form — opens WhatsApp with prefilled enquiry to +919505009699
 document.getElementById('leadForm').addEventListener('submit', e => {
   e.preventDefault();
   const f = e.target;
@@ -53,11 +53,20 @@ document.getElementById('leadForm').addEventListener('submit', e => {
   const data = Object.fromEntries(new FormData(f).entries());
   const note = document.getElementById('formNote');
   note.textContent = 'Deploying your vision…';
-  const subject = encodeURIComponent(`New Vision: ${data.name} — ${data.need}`);
-  const body = encodeURIComponent(`Name: ${data.name}\nOrg: ${data.org}\nBudget: ${data.budget}\nNeed: ${data.need}\n\nVision:\n${data.vision}`);
+  const msg =
+`Hello BEYONDX, I have a project vision:
+--------------------------
+Name: ${data.name}
+Organization: ${data.org || '-'}
+Budget Tier: ${data.budget}
+Tech Need: ${data.need}
+
+Vision / Brief:
+${data.vision}`;
+  const url = `https://wa.me/919505009699?text=${encodeURIComponent(msg)}`;
   setTimeout(() => {
-    window.location.href = `mailto:hello@beyondx.in?subject=${subject}&body=${body}`;
-    note.textContent = '✓ Received. Opening email client — we reply within 24h.';
+    window.open(url, '_blank');
+    note.textContent = '✓ Opening WhatsApp — press send to deliver your vision. We reply within 24h.';
     f.reset();
-  }, 800);
+  }, 600);
 });
