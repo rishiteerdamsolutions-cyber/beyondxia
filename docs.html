@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>pRAG Documentation — Setup & User Guide</title>
+<meta name="description" content="pRAG documentation: what you need, how to install, add documents, connect your Claude API key, build your knowledge base, and use Ask and Voice-explain modes." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="product.css" />
+</head>
+<body>
+<header class="pnav">
+  <div class="pnav-inner">
+    <a href="product.html" class="brand"><span class="brand-mark"><img src="prag-logo.png" alt="pRAG logo" /></span><span class="brand-text">pRAG <small>docs</small></span></a>
+    <nav class="pnav-links">
+      <a href="product.html">← Back to pRAG</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="product.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container narrow">
+    <p class="kicker">DOCUMENTATION</p>
+    <h1>pRAG setup &amp; user guide</h1>
+    <p class="lede">Everything you need to run your personal RAG: what to prepare, how to connect Claude, and how to get answers from your own documents.</p>
+
+    <div class="doc">
+      <h2>1. What you need</h2>
+      <ul>
+        <li><b>A computer</b> to run pRAG on (setup details come with your access — <a href="product.html#contact">request access here</a>).</li>
+        <li><b>PDFs you have permission to use</b> — your own notes, openly licensed books, or material your school has authorised. Never upload pirated or borrowed material.</li>
+        <li><b>A Claude API key (BYOK).</b> Create one in Anthropic's console (console.anthropic.com) under your own account. API usage is billed by Anthropic to your key — check their pricing before heavy use.</li>
+        <li><b>Internet access</b> — your questions and the matching passages are sent to the Claude API to generate answers.</li>
+      </ul>
+
+      <h2>2. Install pRAG</h2>
+      <!-- TODO:DOWNLOAD — replace this paragraph with the real download/install steps -->
+      <p>pRAG is currently shared directly with users and pilot schools. <a href="product.html#contact">Contact us on WhatsApp or email</a> to request access, and we'll send the installer plus setup help.</p>
+
+      <h2>3. Add your PDFs</h2>
+      <ol>
+        <li>Open pRAG and choose <b>Add documents</b>.</li>
+        <li>Select one chapter or subject at a time — smaller, well-organised sets give better answers.</li>
+        <li>Wait for indexing to finish before asking questions (large PDFs take longer).</li>
+      </ol>
+
+      <h2>4. Connect your Claude key</h2>
+      <ol>
+        <li>Copy your API key from the Anthropic console.</li>
+        <li>In pRAG, open <b>Settings → Claude API key</b> and paste it.</li>
+        <li>Send a test question. If it answers with page references, you're connected.</li>
+      </ol>
+      <p>Treat your key like a password — don't share screenshots containing it, and revoke it in the Anthropic console if it ever leaks.</p>
+
+      <h2>5. Ask questions</h2>
+      <p>Type your question in <b>Ask</b> mode. You'll get a concise answer plus the pages it came from — expand each reference and read the passage yourself before trusting important answers.</p>
+
+      <h2>6. Voice explain mode</h2>
+      <p>Press play on any answer or document section. pRAG explains it aloud like a real person, in plain words. Pause, replay, or slow down any part. Long documents may span multiple sessions — your place is saved per document set.</p>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li><b>"Invalid API key"</b> — re-copy the key from the Anthropic console; check for extra spaces.</li>
+        <li><b>Answers feel off-topic</b> — narrow the document set to one chapter, and rephrase the question with terms from the book.</li>
+        <li><b>Slow indexing</b> — split very large PDFs by chapter and index them separately.</li>
+        <li><b>Something else broken?</b> — message us on <a href="https://wa.me/919505009699" target="_blank" rel="noopener">WhatsApp (+91 95050 09699)</a> with what you clicked and what you saw.</li>
+      </ul>
+
+      <h2>Honest limits</h2>
+      <ul>
+        <li>pRAG needs a Claude API key and internet — it is not an offline app.</li>
+        <li>It can make mistakes. Teachers and textbooks remain the authority.</li>
+        <li>It only knows what you upload — it won't answer from outside your documents.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="pfoot">
+  <div class="container foot-grid">
+    <div>
+      <p class="fname">pRAG <span>by BEYONDX INFORMATICS ANALYTICS PVT LTD · Karimnagar, Telangana, India</span></p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/aditya-nanda/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://wa.me/919505009699" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+      </div>
+    </div>
+    <div>
+      <a href="product.html">pRAG home</a>
+      <a href="product.html#contact">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="foot-base">© 2023–2026 BEYONDX INFORMATICS ANALYTICS PVT LTD</div>
+</footer>
+</body>
+</html>
