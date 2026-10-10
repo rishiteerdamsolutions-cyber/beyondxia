@@ -1,29 +1,24 @@
-# BEYONDX INFORMATICS ANALYTICS PVT LTD — Landing Page
+# pRAG by Beyondx — Personal RAG, powered by Claude
 
-Premium dark-mode corporate landing page. Static, zero-build, Vercel-ready.
+Single product site. Static, zero-build, Vercel-ready. Live at `/product`.
 
 ## Run locally
 ```bash
-npx serve .
-# or
-python3 -m http.server 3000
+python3 -m http.server 8080
+# open http://localhost:8080/product.html
 ```
 
-## Deploy to Vercel
-```bash
-git init
-git add .
-git commit -m "feat: beyondx landing v1"
-git branch -M main
-git remote add origin <your-repo-url>
-git push -u origin main
-# then: vercel --prod  OR import repo in vercel.com dashboard
-```
+## Deploy
+Push to `main` — Vercel auto-deploys.
 
 ## Structure
-- `index.html` — all sections (hero, services, founder, academy, lead form, footer)
-- `styles.css` — design system (deep tech dark + electric blue / violet)
-- `script.js` — reveal animations, counters, carousel, form → mailto
-- `vercel.json` — cleanUrls + security headers
+- `product.html` — the entire site (also copied to `index.html` so `/` serves it)
+- `index.html` — identical copy of the product page (root route)
+- `docs.html` — setup & user guide
+- `privacy.html` — privacy policy
+- `product.css` / `product.js` — warm edu theme + menu/reveal
+- `prag-logo.png` — logo + favicon
+- `vercel.json` — cleanUrls, security + no-cache HTML headers
 
-To wire the form to a backend later, replace the mailto handler in `script.js` with a fetch to `/api/lead` (Vercel Serverless Function) + Resend/Sheets.
+## Configurables
+- `TODO:DOWNLOAD` in product/docs — replace with real download link when available
