@@ -120,6 +120,17 @@ h1{font-size:clamp(2.3rem,5vw,3.6rem)} h2{font-size:clamp(1.6rem,3.2vw,2.3rem)}
 .doc ul,.doc ol{padding-left:22px;display:grid;gap:6px}
 .doc a{color:var(--accent);font-weight:600}
 
+/* Company identity: footer legal block + company details list */
+.legal{font-style:normal;color:var(--muted);font-size:.82rem;line-height:1.7;margin-top:10px}
+.pfoot .legal a{display:inline;margin:0;color:var(--muted);text-decoration:underline;font-weight:500}
+.tm-note{font-size:.76rem;margin-top:6px}
+.facts{display:grid;grid-template-columns:200px 1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:6px 0 10px}
+.facts dt,.facts dd{padding:12px 16px;border-bottom:1px solid var(--line)}
+.facts dt{background:var(--tint);font-weight:600;color:var(--ink);font-size:.9rem}
+.facts dd{color:#453824;word-break:break-word}
+.facts dt:last-of-type,.facts dd:last-of-type{border-bottom:0}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
+
 @media(max-width:960px){
   .hero-grid,.modes{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
@@ -127,4 +138,4 @@ h1{font-size:clamp(2.3rem,5vw,3.6rem)} h2{font-size:clamp(1.6rem,3.2vw,2.3rem)}
   .pnav-links{display:none}.hamburger{display:flex}
   .mockup{max-width:100%}
 }
-@media(max-width:600px){.steps,.benefits,.foot-grid{grid-template-columns:1fr}.cta-card{padding:40px 22px}}
+@media(max-width:600px){.steps,.benefits,.foot-grid,.facts{grid-template-columns:1fr}.cta-card{padding:40px 22px}.facts dt{border-bottom:0}}

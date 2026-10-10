@@ -16,8 +16,13 @@ Push to `main` — Vercel auto-deploys.
 - `index.html` — identical copy of the product page (root route)
 - `docs.html` — setup & user guide
 - `privacy.html` — privacy policy
+- `terms.html` — terms of use
+- `company.html` — legal entity details (CIN, registered office, founder, MCA lookup)
 - `product.css` / `product.js` — warm edu theme + menu/reveal
-- `prag-logo.png` — logo + favicon
+- `prag-logo-256.png` — logo + favicon used by pages (`prag-logo.png` is the full-size original)
+- `robots.txt` / `sitemap.xml` — crawl hints
+
+Every page footer carries the full legal name, CIN, registered office, email, and phone. Keep these identical everywhere, including the Claude Console organization name.
 - `vercel.json` — cleanUrls, security + no-cache HTML headers
 
 ## Configurables
