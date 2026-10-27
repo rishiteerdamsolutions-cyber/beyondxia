@@ -102,6 +102,7 @@ h1{font-size:clamp(2.3rem,5vw,3.6rem)} h2{font-size:clamp(1.6rem,3.2vw,2.3rem)}
 
 /* Reveal */
 .reveal{opacity:0;transform:translateY(24px);transition:.6s ease}.reveal.in{opacity:1;transform:none}
+.hero .reveal{opacity:1;transform:none}
 
 /* pRAG additions: credibility strip, contact links, socials, docs pages */
 .built-strip{margin-top:36px;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:14px 22px;font-size:.9rem;color:var(--muted);text-align:center}
@@ -131,8 +132,22 @@ h1{font-size:clamp(2.3rem,5vw,3.6rem)} h2{font-size:clamp(1.6rem,3.2vw,2.3rem)}
 .facts dt:last-of-type,.facts dd:last-of-type{border-bottom:0}
 .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
 
+/* First product on pRAG */
+.kinkar-card{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:40px 36px;box-shadow:0 16px 40px rgba(80,55,25,.08)}
+.kinkar-card .kicker{margin-bottom:8px}
+.kinkar-card h2{font-size:clamp(1.45rem,2.6vw,2rem);margin-bottom:12px}
+.kinkar-card .lede{margin-top:0;max-width:none}
+.stack-pill{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;margin:16px 0 22px;font-size:.82rem;font-weight:600;color:var(--muted)}
+.stack-pill b{background:var(--tint);border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--ink)}
+.kinkar-points{list-style:none;display:grid;gap:10px;color:#453824;font-size:.94rem}
+.kinkar-points li::before{content:"✓ ";color:var(--green);font-weight:700}
+.kinkar-aside{background:var(--tint);border:1px solid var(--line);border-radius:16px;padding:22px}
+.kinkar-aside p{font-size:.9rem;color:#453824}
+.kinkar-aside .label{font-size:.72rem;letter-spacing:.16em;font-weight:700;color:var(--accent);margin-bottom:8px}
+
 @media(max-width:960px){
-  .hero-grid,.modes{grid-template-columns:1fr}
+  .hero-grid,.modes,.kinkar-card{grid-template-columns:1fr}
+  .kinkar-card{padding:28px 22px}
   .steps{grid-template-columns:1fr 1fr}
   .benefits{grid-template-columns:1fr 1fr}
   .pnav-links{display:none}.hamburger{display:flex}

@@ -1,6 +1,6 @@
 # pRAG by Beyondx — Personal RAG, powered by Claude
 
-Single product site. Static, zero-build, Vercel-ready. Live at `/product`.
+pRAG is the core product. Kinkar is the first product built on it (US IT staffing). Static, zero-build, Vercel-ready.
 
 ## Run locally
 ```bash
@@ -14,6 +14,7 @@ Push to `main` — Vercel auto-deploys.
 ## Structure
 - `product.html` — the entire site (also copied to `index.html` so `/` serves it)
 - `index.html` — identical copy of the product page (root route)
+- `kinkar.html` — first product on pRAG: AI recruiter workforce for US IT staffing
 - `docs.html` — setup & user guide
 - `privacy.html` — privacy policy
 - `terms.html` — terms of use
